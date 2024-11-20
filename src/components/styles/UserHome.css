@@ -1,0 +1,180 @@
+/* Overall container styling */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+.expense-form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f2ef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .expense-form-container h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #213e60;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .expense-form-container p {
+    text-align: left;
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .expense-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select{
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .form-group input[type="number"],
+  .form-group input[type="date"] {
+    -webkit-appearance: none; 
+  }
+  
+  /* Textarea styling */
+.form-group textarea {
+    width: 100%; 
+    height: 150px; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    resize: vertical;
+    transition: border-color 0.3s ease; 
+  }
+  
+  /* Focus state styling */
+  .form-group textarea:focus {
+    border-color: #007BFF; 
+    outline: none; 
+  }
+  
+  .form-group textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #213e60;
+    outline: none;
+  }
+  
+  .submit-btn {
+    padding: 12px 20px;
+    background-color: #213e60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2a4d75;
+    outline: 2px solid #555; 
+    outline-offset: 2px;
+  }
+  
+
+/* Map styling */
+.map-container {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+.history{
+  margin-left: 20px;
+}
+.history-container{
+  width: 100%;
+}
+.historyHeading{
+  font-size: 50px;
+  font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .map-container {
+    margin-top: 16px;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+    .expense-form-container {
+      padding: 15px;
+    }
+  
+    .expense-form-container h2 {
+      font-size: 1.8em;
+    }
+  
+    .form-group label {
+      font-size: 1em;
+    }
+  
+    .submit-btn {
+      font-size: 1.1em;
+    }
+  }
