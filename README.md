@@ -12,8 +12,7 @@ Key Features:
 
 SpendSight helps users not only manage their finances but also gain insights into their spending behavior by leveraging geospatial data. Whether you’re on the go or planning for the future, SpendSight keeps your financial tracking efficient and insightful.
 
-Video Demonstration:
-[Insert Video Link Here]
+
 
 
 
